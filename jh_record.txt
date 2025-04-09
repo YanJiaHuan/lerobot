@@ -1,0 +1,14 @@
+04-8-2025
+python lerobot/scripts/train.py \
+--policy.path="/home/zcai/jh_workspace/pi0" \
+--dataset.repo_id="/home/zcai/jh_workspace/koch_test" \
+--batch_size=1 \
+--policy.device="cpu"
+
+04-9-2025
+python lerobot/scripts/train.py \
+--policy.path="/home/zcai/jh_workspace/pi0" \
+--dataset.repo_id="/home/zcai/jh_workspace/koch_test" \
+--batch_size=1 \
+--output_dir="/home/zcai/jh_workspace/lerobot/our_data/our_training"
+

@@ -67,7 +67,6 @@ from lerobot.common.policies.pi0.paligemma_with_expert import (
 from lerobot.common.policies.pretrained import PreTrainedPolicy
 from lerobot.common.utils.utils import get_safe_dtype
 
-
 def create_sinusoidal_pos_embedding(
     time: torch.tensor, dimension: int, min_period: float, max_period: float, device="cpu"
 ) -> Tensor:
@@ -248,7 +247,7 @@ class PI0Policy(PreTrainedPolicy):
             config.output_features, config.normalization_mapping, dataset_stats
         )
 
-        self.language_tokenizer = AutoTokenizer.from_pretrained("google/paligemma-3b-pt-224")
+        self.language_tokenizer = AutoTokenizer.from_pretrained("/home/zcai/jh_workspace/paligemma-3b-pt-224")
         self.model = PI0FlowMatching(config)
 
         self.reset()
